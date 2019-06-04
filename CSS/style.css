@@ -1,0 +1,86 @@
+/* :root{
+  --width-multiplize = 
+} */
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Arvo', serif;
+
+}
+#content{
+  height: 50%;
+  width: 14%;
+  /* margin: auto; */
+  /* padding-top: 28%; */
+  position: absolute;
+  left:45%;
+  top: 25%;
+  background-image: url("../Assets/corps.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  display:grid;
+  grid-template-areas:
+  "shoulder" "arm"
+  "hand"  "leg"
+  "knee"  "foot";
+  grid-template-columns: 1fr 1fr;
+
+}
+#bodypart{
+  /* position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+}
+.shoulder,.hand,.knee,.arm,.leg,.foot{
+  height: 3vh;
+  width: 3vw;
+}
+.shoulder{
+  border-radius: 50%;
+  background-color: wheat ;
+  grid-area: shoulder;
+  
+}
+.hand{
+  border-radius: 50%;
+  background-color: aqua;
+  grid-area: hand;
+  
+
+}
+.knee{
+  border-radius: 50%;
+  background-color: blue;
+  grid-area: knee;
+  
+
+}
+.arm{
+  border-radius: 50%;
+  background-color: blueviolet;
+  grid-area: arm;
+  
+
+}
+.leg{
+  border-radius: 50%;
+  background-color: greenyellow;
+  grid-area: leg;
+  
+
+}
+.foot{ 
+   border-radius: 50%;
+   background-color: gold;
+   grid-area: foot;
+   
+}
+
+@media(max-width:450px){
+  #content{
+    /* background-size: % */
+  }
+}
