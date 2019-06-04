@@ -1,27 +1,26 @@
-/* :root{
-  --width-multiplize = 
-} */
 
 body {
   height: 85vh;
   width: 95vw;
   font-family: 'Arvo', serif;
   font-size: 15px;
-
 }
-
+body> h1{
+  text-align: center;
+  position: relative;
+  top:10vh;
+}
+/* wrapper containsthe image and the description */
 .wrapper {
   height: 0;
   width: 15%;
   margin: 0 auto;
   padding-bottom: 44%;
   position: relative;
-  /* left:45%; */
   top: 25%;
   background: url("../Assets/corps.png");
   background-size: contain;
   background-repeat: no-repeat;
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
 
@@ -45,7 +44,7 @@ body {
   margin-top: 5%;
   width: 30%
 }
-
+/* the circles */
 #bodypart>.shoulder,
 #bodypart>.hand,
 #bodypart>.knee,
@@ -58,7 +57,7 @@ body {
   padding-bottom: 100%;
   opacity: 0.5;
 }
-
+/* color and placing of every circles */
 #bodypart>.shoulder {
   background-color: wheat;
   right: -2%;
@@ -115,6 +114,8 @@ body {
  #description>.shoulder{
   text-align: end;
 }
+
+
 @media(max-width:500px) {
   #description{
     font-size: 10px;

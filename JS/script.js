@@ -13,7 +13,6 @@ const information = () =>{
       events[i][1].style="display:none"
       
     })
-    console.log(events[i][0])
   }
 }
 
