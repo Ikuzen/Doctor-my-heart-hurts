@@ -110,10 +110,6 @@ body> h1{
   right: 1vw;
   top: 24vh;
   }
-  
- #description>.shoulder{
-  text-align: end;
-}
 
 
 @media(max-width:500px) {
