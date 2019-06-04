@@ -2,85 +2,122 @@
   --width-multiplize = 
 } */
 
-body{
-  height: 100vh;
-  width: 100vw;
+body {
+  height: 85vh;
+  width: 95vw;
   font-family: 'Arvo', serif;
+  font-size: 15px;
 
 }
-#content{
-  height: 50%;
-  width: 14%;
-  /* margin: auto; */
-  /* padding-top: 28%; */
-  position: absolute;
-  left:45%;
+
+.wrapper {
+  height: 0;
+  width: 15%;
+  margin: 0 auto;
+  padding-bottom: 44%;
+  position: relative;
+  /* left:45%; */
   top: 25%;
-  background-image: url("../Assets/corps.png");
-  background-size:contain;
+  background: url("../Assets/corps.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  display:grid;
-  grid-template-areas:
-  "shoulder" "arm"
-  "hand"  "leg"
-  "knee"  "foot";
-  grid-template-columns: 1fr 1fr;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+
 
 }
-#bodypart{
-  /* position: absolute;
-  top:0;
+
+.wrapper:after {
+  padding-top: 75%;
+  display: block;
+  content: '';
+}
+
+#bodypart {
+  position: absolute;
+  top: 0;
   bottom: 0;
   right: 0;
-  left: 0; */
+  left: 0;
+  color: black;
+  text-align: center;
+  margin-top: 5%;
+  width: 30%
 }
-.shoulder,.hand,.knee,.arm,.leg,.foot{
-  height: 3vh;
-  width: 3vw;
-}
-.shoulder{
+
+#bodypart>.shoulder,
+#bodypart>.hand,
+#bodypart>.knee,
+#bodypart>.arm,
+#bodypart>.leg,
+#bodypart>.foot {
+  position: relative;
   border-radius: 50%;
-  background-color: wheat ;
-  grid-area: shoulder;
-  
+  width: 100%;
+  padding-bottom: 100%;
+  opacity: 0.5;
 }
-.hand{
-  border-radius: 50%;
+
+#bodypart>.shoulder {
+  background-color: wheat;
+  right: -2%;
+  top: 14%;
+}
+
+#bodypart>.hand {
   background-color: aqua;
-  grid-area: hand;
-  
+  right: 9%;
+  top: 36%;
+
 
 }
-.knee{
-  border-radius: 50%;
+
+#bodypart>.knee {
   background-color: blue;
-  grid-area: knee;
-  
+  right: -35%;
+  top: 45%;
+
 
 }
-.arm{
-  border-radius: 50%;
+
+#bodypart>.arm {
   background-color: blueviolet;
-  grid-area: arm;
-  
+  right: -192%;
+  top: 0%;
 
 }
-.leg{
-  border-radius: 50%;
+
+#bodypart>.leg {
   background-color: greenyellow;
-  grid-area: leg;
+  right: -143%;
+  top: 3%;
+
+
+
+}
+
+#bodypart>.foot {
+  background-color: gold;
+  right: -136%;
+  top: 36%;
+}
+
+#description {
+  width: 40vw;
+  max-height: inherit;
+  position: absolute;
+  text-align: left;
+  right: 1vw;
+  top: 24vh;
+  }
   
-
+ #description>.shoulder{
+  text-align: end;
 }
-.foot{ 
-   border-radius: 50%;
-   background-color: gold;
-   grid-area: foot;
-   
-}
+@media(max-width:500px) {
+  #description{
+    font-size: 10px;
 
-@media(max-width:450px){
-  #content{
-    /* background-size: % */
   }
 }
